@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Profil — [Nama Anda]</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <meta name="description" content="Profil profesional [Nama Anda] — desain modern dengan animasi halus dan interaksi responsif.">
+</head>
+<body>
+  <header class="site-header reveal-on-load" role="banner">
+    <div class="container header-inner">
+      <a class="logo" href="#home" aria-label="Beranda">
+        <span class="logo-mark" aria-hidden="true">★</span>
+        <span class="logo-text">[Nama Anda]</span>
+      </a>
+      <nav class="main-nav" role="navigation" aria-label="Navigasi utama">
+        <ul>
+          <li><a href="#about">Tentang</a></li>
+          <li><a href="#skills">Keahlian</a></li>
+          <li><a href="#projects">Proyek</a></li>
+          <li><a href="#contact">Kontak</a></li>
+        </ul>
+      </nav>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="main-navigation">Menu</button>
+    </div>
+  </header>
+
+  <main id="home">
+    <section class="hero container reveal hero-section" aria-labelledby="hero-title">
+      <div class="hero-left">
+        <h1 id="hero-title" class="reveal">Halo, saya <span class="name">[Nama Anda]</span></h1>
+        <p class="lead reveal">Saya adalah [profesi] yang menggabungkan desain dan teknologi untuk membangun pengalaman digital yang bersih, cepat, dan berkesan.</p>
+        <div class="hero-cta reveal">
+          <a href="#contact" class="btn btn-primary cta-pulse">Hubungi Saya</a>
+          <a href="#projects" class="btn btn-ghost">Lihat Proyek</a>
+        </div>
+      </div>
+
+      <div class="hero-right reveal profile-wrap" aria-hidden="false">
+        <div class="profile-photo" id="profile-photo" tabindex="0" aria-label="Foto profil [Nama Anda]">
+          <img src="assets/profile.jpg" alt="Foto profil [Nama Anda] — ganti dengan foto Anda">
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="container reveal content-section" aria-labelledby="about-title">
+      <h2 id="about-title" class="section-title">Tentang Saya</h2>
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <p>Saya memiliki pengalaman dalam [singkat pengalaman]. Saya menikmati menyelesaikan masalah kompleks menjadi solusi yang mudah digunakan, serta berkolaborasi lintas-tim untuk mencapai hasil yang berfokus pada pengguna.</p>
+          <ul>
+            <li>Keahlian inti: [keahlian 1], [keahlian 2], [keahlian 3]</li>
+            <li>Metodologi: [mis. Agile, TDD]</li>
+          </ul>
+        </div>
+        <aside class="about-stats reveal" aria-hidden="true">
+          <div class="stat">
+            <strong>5+</strong>
+            <span>Tahun pengalaman</span>
+          </div>
+          <div class="stat">
+            <strong>20+</strong>
+            <span>Proyek selesai</span>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section id="skills" class="container reveal content-section" aria-labelledby="skills-title">
+      <h2 id="skills-title" class="section-title">Keahlian</h2>
+      <div class="skills-grid" role="list">
+        <!-- skill cards -->
+        <article class="skill-card tilt-card reveal" role="listitem" tabindex="0" aria-labelledby="skill-1-title" data-skill="Frontend">
+          <div class="card-inner">
+            <div class="card-front">
+              <h3 id="skill-1-title">Frontend</h3>
+              <p>HTML, CSS, JavaScript, React</p>
+            </div>
+            <div class="card-back" aria-hidden="true">
+              <p>Berpengalaman membuat antarmuka responsif, performa dioptimalkan, dan aksesibilitas diperhatikan.</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="skill-card tilt-card reveal" role="listitem" tabindex="0" aria-labelledby="skill-2-title" data-skill="Backend">
+          <div class="card-inner">
+            <div class="card-front">
+              <h3 id="skill-2-title">Backend</h3>
+              <p>Node.js, Express, REST API</p>
+            </div>
+            <div class="card-back" aria-hidden="true">
+              <p>Mendesain API terukur dan aman, optimasi query, serta integrasi layanan pihak ketiga.</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="skill-card tilt-card reveal" role="listitem" tabindex="0" aria-labelledby="skill-3-title" data-skill="DevOps">
+          <div class="card-inner">
+            <div class="card-front">
+              <h3 id="skill-3-title">DevOps</h3>
+              <p>CI/CD, Docker, AWS</p>
+            </div>
+            <div class="card-back" aria-hidden="true">
+              <p>Automasi pipeline, containerization, dan deployment yang dapat diulang dan dapat dipantau.</p>
+            </div>
+          </div>
+        </article>
+
+        <!-- tambahkan kartu lain sesuai kebutuhan -->
+      </div>
+    </section>
+
+    <section id="projects" class="container reveal content-section" aria-labelledby="projects-title">
+      <h2 id="projects-title" class="section-title">Proyek</h2>
+      <div class="projects-grid">
+        <article class="project-card reveal">
+          <h3>Proyek A</h3>
+          <p>Deskripsi singkat proyek A dan teknologi yang digunakan.</p>
+          <a class="btn btn-sm" href="#" aria-label="Lihat detail Proyek A">Detail</a>
+        </article>
+
+        <article class="project-card reveal">
+          <h3>Proyek B</h3>
+          <p>Deskripsi singkat proyek B dan hasil utama.</p>
+          <a class="btn btn-sm" href="#" aria-label="Lihat detail Proyek B">Detail</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="container reveal content-section" aria-labelledby="contact-title">
+      <h2 id="contact-title" class="section-title">Kontak</h2>
+      <p class="reveal">Tertarik bekerja sama atau ingin ngobrol? Kirim pesan lewat formulir atau email.</p>
+      <form class="contact-form reveal" action="#" onsubmit="return false;">
+        <label>
+          <span>Nama</span>
+          <input type="text" name="name" required>
+        </label>
+        <label>
+          <span>Email</span>
+          <input type="email" name="email" required>
+        </label>
+        <label>
+          <span>Pesan</span>
+          <textarea name="message" rows="5" required></textarea>
+        </label>
+        <div class="form-actions">
+          <button type="submit" class="btn btn-primary cta-pulse">Kirim Pesan</button>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer container" role="contentinfo">
+    <p>&copy; <span id="year"></span> [Nama Anda]. Semua hak cipta.</p>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
